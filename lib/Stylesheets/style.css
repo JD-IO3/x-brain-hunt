@@ -1,0 +1,148 @@
+
+@font-face {
+    font-family: 'Nasalization';
+    src: url(/lib/Fonts/nasalization-rg-regular.otf) format(opentype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Neuropolitical';
+    src: url(/lib/Fonts/neuropolitical-rg-regular.otf) format(opentype);
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #001402;
+}
+
+.bgVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .bgVideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .bgVideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.mainText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+    color: #15E4A0;
+}
+
+.mainText span {
+    font-size: 7em;
+    font-family: "Nasalization", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-shadow: 8px 8px #16de3b; */
+}
+
+.evText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    color: #ffffff;
+}
+
+.evText span {
+    font-size: 2.1em;
+    word-spacing: 0.5em;
+    font-family: "Neuropolitical", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .mainText span {
+        font-size: 7em;
+    }
+
+    .evText span {
+        font-size: 2.1em;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .mainText {
+        transform: translate(-50%, -300%);
+    }
+
+    .mainText span {
+        font-size: 5.8em;
+    }
+
+    .evText {
+        transform: translate(-50%, -650%);
+    }
+
+    .evText span {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1064px) and (min-width: 917px) {
+    .mainText span {
+        font-size: 4em;
+    }
+
+    .evText span {
+        font-size: 1em;
+    }
+}
+
+@media (max-aspect-ratio: 4/3) {
+    .mainText {
+        transform: translate(-50%, -400%);
+    }
+
+    .mainText span {
+        font-size: 3em;
+    }
+
+    .evText {
+        transform: translate(-50%, -750%);
+    }
+
+    .evText span {
+        font-size: 1em;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .mainText {
+        transform: translate(-50%, -500%);
+    }
+
+    .mainText span {
+        font-size: 2.165em;
+    }
+
+    .evText span {
+        font-size: 1em;
+    }
+}
+
+.playBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

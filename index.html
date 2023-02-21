@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BrainHunt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./lib/Stylesheets/style.css">
+        <link rel="stylesheet" href="./lib/Stylesheets/button.css">
+    </head>
+    <body>
+        <div class="box">
+            <video autoplay loop muted plays-inline class="bgVideo">
+                <source src="./lib/Images/bg_video.mp4" type="video/mp4">
+            </video>
+
+            <div class="mainText">
+                <span>BRAIN-HUNT</span>
+            </div>
+
+            <div class="evText">
+                <span>XENESIS PRESENTS</span>
+            </div>
+
+            <div class="playBtn">
+                <a href="./round1.html" target="_self"><button class="startBtn">
+                    P L A Y
+                    <div id="clip">
+                        <div id="leftTop" class="corner"></div>
+                        <div id="rightBottom" class="corner"></div>
+                        <div id="rightTop" class="corner"></div>
+                        <div id="leftBottom" class="corner"></div>
+                    </div>
+                    <span id="rightArrow" class="arrow"></span>
+                    <span id="leftArrow" class="arrow"></span>
+                </button></a>
+            </div>
+        </div>
+        
+        <script src="./lib/JScripts/script.js" async defer></script>
+    </body>
+</html>
