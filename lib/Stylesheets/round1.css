@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Nasalization';
-    src: url(/lib/Fonts/nasalization-rg-regular.otf) format(opentype);
+    src: url(../Fonts/nasalization-rg-regular.otf) format(opentype);
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Neuropolitical';
-    src: url(/lib/Fonts/neuropolitical-rg-regular.otf) format(opentype);
+    src: url(../Fonts/neuropolitical-rg-regular.otf) format(opentype);
     font-weight: normal;
 }
 
