@@ -18,8 +18,8 @@
 
 body {
 	color: #ffffff;
-    background: #0C1217;
-	background: url("../Images/Hexagon.png");
+    background-color: #0C1217;
+	background-image: url("../Images/Hexagon.png");
 	/* background-image: url("/lib/Images/Animated_Shape.svg"); */
 	background-position: center center;
 	background-repeat: no-repeat;
