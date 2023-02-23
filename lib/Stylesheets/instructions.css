@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url(../Fonts/nasalization-rg-regular.otf) format(opentype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Neuropolitical';
+    src: url(../Fonts/neuropolitical-rg-regular.otf) format(opentype);
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background: #0C1217;
+    color: #00d34a;
+}
+
+.mainText {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    margin: 35px auto;
+    color: #00d34a;
+}
+
+.mainText span {
+    font-size: 4vw;
+    font-family: "Nasalization", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-shadow: 8px 8px #16de3b; */
+}
+
+.instruction-txt {
+    height: fit-content;
+    width: 80%;
+    position: relative;
+    margin: 100px auto;
+}
+
+.type {
+    color: #0000;
+    font-size: 2vw;
+    /* font-family: "Neuropolitical", monospace, sans-serif; */
+    font-family: monospace;
+    font-weight: 500;
+    background:
+        linear-gradient(-90deg, #00d34a 5px, #0000 0) 10px 0,
+        linear-gradient(#00d34a 0 0) 0 0;
+    background-size: calc(var(--n)*1ch) 200%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    animation:
+        b .7s infinite alternate steps(1),
+        t calc(var(--n)*.099s) steps(var(--n))forwards;
+}
+
+@keyframes t {
+    from {
+        background-size: 0 200%
+    }
+}
+
+@keyframes b {
+    50% {
+        background-position: 0 -100%, 0 0
+    }
+}
+
+.playBtn {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

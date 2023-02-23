@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Nasalization';
+  src: url(../Fonts/nasalization-rg-regular.otf) format(opentype);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Neuropolitical';
+  src: url(../Fonts/neuropolitical-rg-regular.otf) format(opentype);
+  font-weight: normal;
+}
+
+body {
+  background: #0C1217;
+  background: url("../Images/Hexagon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mainText {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00d34a;
+}
+
+.mainText span {
+  font-size: 5vw;
+  font-family: "Nasalization", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* #bodytimer {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+} */
+
+#timer {
+  /* background-color: RGB(248, 248, 248); */
+  /* background: transparent; */
+  /*ou #F8F8F8*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: max-content;
+  align-items: center;
+  /* position: relative;
+  margin: 12% auto; */
+  /* border: 1px solid white; */
+  /* border-radius: 25px; */
+  /* box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4); */
+}
+
+#display {
+  /* background-color: white; */
+  color: #00d34a;
+  font-size: 10vw;
+  font-family: "Neuropolitical", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: fit-content;
+  width: auto;
+  min-width: 150px;
+  margin: 15px auto 15px auto;
+  padding: 10px 15px;
+  /* border: 1px solid lightgray; */
+  border-radius: 25px;
+  /* box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4); */
+}
+
+/* #time {
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+} */
+
+/* input {
+  margin: 10px auto 10px auto;
+  width: 30%;
+  background-color: white;
+} */
+
+/* #volumeControl {
+  margin: 15px auto 0 auto;
+  width: 10%;
+}
+
+Chrome,
+Safari,
+Opera and Edge Chromium styles input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #095b9e;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+} */
+
+/* Firefox styles  */
+/* input[type="range"]::-moz-range-track {
+    background-color: #095b9e;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  } */
+
+/* #button {
+  margin: 25px auto 30px auto;
+  text-align: center;
+} 
+
+button:enabled {
+  background-color: #00d34a;
+}
+
+button[disabled] {
+  background-color: #ff2600;
+} */
+
+#startBtn {
+  /* cursor: pointer; */
+  height: fit-content;
+  width: fit-content;
+  background: none;
+  border: none;
+}

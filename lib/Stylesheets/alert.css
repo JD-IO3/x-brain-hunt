@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial';
+}
+
+.button-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.button-group button {
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.button-group button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #ccc;
+}
+
+.dialog-container {
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #2d2b2b;
+    padding: 10px;
+    /* border: 2px solid #ddd; */
+    box-shadow: 1px 1px 5px 1px #151515;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.dialog-header {
+    padding: 10px;
+    font-weight: bold;
+    background: #575757;
+    color: #f6f7f8;
+}
+
+.dialog-body {
+    padding: 10px;
+    line-height: 30px;
+    color: #00d34a;
+}
+
+.dialog-footer {
+    text-align: center;
+    background: transparent;
+    padding: 3px 0;
+}
+
+.dialog-footer a {
+    display: inline-block;
+    color: #00d34a;
+    width: 100px;
+    padding: 5px 0;
+    border: 1px solid #00d34a;
+    border-radius: 10px;
+    background: #484545;
+    cursor: pointer;
+}
+
+.dialog-footer a:active {
+    box-shadow: inset 2px 2px 4px #00d34a;
+    /* color: #ffffff; */
+}

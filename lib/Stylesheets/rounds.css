@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Nasalization';
+    src: url(../Fonts/nasalization-rg-regular.otf) format(opentype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Neuropolitical';
+    src: url(../Fonts/neuropolitical-rg-regular.otf) format(opentype);
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	color: #ffffff;
+    background: #0C1217;
+	background: url("../Images/Hexagon.svg");
+	/* background-image: url("/lib/Images/Animated_Shape.svg"); */
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#box.active{
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+
+.mainText {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00d34a;
+}
+
+.mainText span {
+    font-size: 5vw;
+    font-family: "Nasalization", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.container {
+	height: fit-content;
+	width: 90%;
+	background: #1B2B30;
+	position: relative;
+	margin: -1% auto;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border:2px solid #00d34a;
+	border-radius: 10px;
+	box-shadow:  20px 20px 60px #1d3136,
+	-20px -20px 60px #23373e;
+}
+
+.questionContainer {
+	height: fit-content;
+	width: 100%;
+	padding: 2ch;
+	/* border:1px solid #ffffff; */
+	border-bottom: none;
+	background: #1B2B30;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.questionContainer h2 {
+	font-size: 2vw;
+	font-family:monospace;
+	font-weight: normal;
+	/* margin-bottom: 1ch; */
+}
+
+.questionContainer span {
+	margin-left: 4ch;
+	font-size: 2vw;
+	font-family:monospace;
+	word-wrap: break-word;
+}
+
+.showBtn {
+	position: relative;
+	margin: 0 auto;
+	cursor: pointer;
+	font-size: 2vw;
+	background: none;
+	border: none;
+	font-family:monospace;
+	color: #ffffff;
+}
+.showBtn:hover {
+	color: #15E4A0;
+}
+
+#solutionContainer {
+	/* display: none; */
+	height: fit-content;
+	width: 100%;
+	padding: 3ch;
+	border-top:2px solid #00d34a;
+	background: #1B2B30;
+	border-radius:0px 0px 10px 10px;
+}
+
+.editor {
+	height: 100%;
+	width: 100%;
+}
+
+.compilerExplorer {
+    height: 80vh;
+    width: 100%;
+	margin-top: 1%;
+    border: none;
+	border-radius: 10px;
+}
+
+.nxtBtn {
+	position: relative;
+	height: fit-content;
+	width: fit-content;
+	margin: 80px auto;
+}
+
+.disabled-link {
+	pointer-events: none;
+}

@@ -11,46 +11,111 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./lib/Stylesheets/rounds.css">
+    <link rel="stylesheet" href="./lib/Stylesheets/timer-rounds.css">
+    <link rel="stylesheet" href="./lib/Stylesheets/alert.css">
+    <link rel="stylesheet" href="./lib/Stylesheets/button.css">
     <link rel="stylesheet" href="./lib/Stylesheets/scrollbar.css">
-    <link rel="stylesheet" href="./lib/Stylesheets/round1.css">
 </head>
 
 <body>
-    <div class="mainText">
-        <span>ROUND-1</span>
-    </div>
-    <div class="container">
-        <div class="problem1">
-            <div class="questionContainer">
-                <h2>Problem-1:</h2>
-                <span>
-                    jdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjd.</span>
+    <div id="box" class="box">
+        <div class="mainText">
+            <span>ROUND-1</span>
+        </div>
+        <div id="timer">
+            <button id="startBtn">
+                <p id="display">15 : 00</p>
+            </button>
+        </div>
+        <div class="container">
+            <div class="problem1">
+                <div class="questionContainer">
+                    <h2>Problem-1:</h2>
+                    <span>
+                        jdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjd.</span>
                     <button class="showBtn">write Code Here</button>
+                </div>
+                <div id="solutionContainer">
+                    <div class="editor ">
+                        <iframe class="compilerExplorer"
+                            src="https://godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,selection:(endColumn:44,endLineNumber:1,positionColumn:44,positionLineNumber:1,selectionStartColumn:44,selectionStartLineNumber:1,startColumn:44,startLineNumber:1),source:'//+Type+your+code+here,+or+load+an+example.'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50,l:'4',m:100,n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'1',compiler:g122,compilerName:'',compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,libs:!(),options:'',source:1,stdinPanelShown:'1',wrap:'0'),l:'5',n:'0',o:'Executor+x86-64+gcc+12.2+(C%2B%2B,+Editor+%231)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4"></iframe>
+                    </div>
+                </div>
             </div>
-            <div id="solutionContainer">
-                <div class="editor ">
-                    <iframe class="compilerExplorer" src="https://godbolt.org/e?hideEditorToolbars=true#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,selection:(endColumn:32,endLineNumber:1,positionColumn:32,positionLineNumber:1,selectionStartColumn:32,selectionStartLineNumber:1,startColumn:32,startLineNumber:1),source:'//Show+Your+Hunting+Skills+Here'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'1',compiler:g122,compilerName:'',compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,libs:!(),options:'',source:1,stdinPanelShown:'1',wrap:'0'),l:'5',n:'0',o:'Executor+x86-64+gcc+12.2+(C%2B%2B,+Editor+%231)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4"></iframe>
+            <div class="problem2">
+                <div class="questionContainer">
+                    <h2>Problem-2:</h2>
+                    <span>
+                        jdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjd.</span>
+                    <button class="showBtn">write Code Here</button>
+                </div>
+                <div id="solutionContainer">
+                    <div class="editor ">
+                        <iframe class="compilerExplorer"
+                            src="https://godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,selection:(endColumn:44,endLineNumber:1,positionColumn:44,positionLineNumber:1,selectionStartColumn:44,selectionStartLineNumber:1,startColumn:44,startLineNumber:1),source:'//+Type+your+code+here,+or+load+an+example.'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50,l:'4',m:100,n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'1',compiler:g122,compilerName:'',compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,libs:!(),options:'',source:1,stdinPanelShown:'1',wrap:'0'),l:'5',n:'0',o:'Executor+x86-64+gcc+12.2+(C%2B%2B,+Editor+%231)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4"></iframe>
 
+                    </div>
+                </div>
+            </div>
+            <div class="problem3">
+                <div class="questionContainer">
+                    <h2>Problem-3:</h2>
+                    <span>
+                        jdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjd.</span>
+                    <button class="showBtn">write Code Here</button>
+                </div>
+                <div id="solutionContainer">
+                    <div class="editor ">
+                        <iframe class="compilerExplorer"
+                            src="https://godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,selection:(endColumn:44,endLineNumber:1,positionColumn:44,positionLineNumber:1,selectionStartColumn:44,selectionStartLineNumber:1,startColumn:44,startLineNumber:1),source:'//+Type+your+code+here,+or+load+an+example.'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50,l:'4',m:100,n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'1',compiler:g122,compilerName:'',compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,libs:!(),options:'',source:1,stdinPanelShown:'1',wrap:'0'),l:'5',n:'0',o:'Executor+x86-64+gcc+12.2+(C%2B%2B,+Editor+%231)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4"></iframe>
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem4">
+                <div class="questionContainer">
+                    <h2>Problem-4:</h2>
+                    <span>
+                        jdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjd.</span>
+                    <button class="showBtn">write Code Here</button>
+                </div>
+                <div id="solutionContainer">
+                    <div class="editor ">
+                        <iframe class="compilerExplorer"
+                            src="https://godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,selection:(endColumn:44,endLineNumber:1,positionColumn:44,positionLineNumber:1,selectionStartColumn:44,selectionStartLineNumber:1,startColumn:44,startLineNumber:1),source:'//+Type+your+code+here,+or+load+an+example.'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50,l:'4',m:100,n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'1',compiler:g122,compilerName:'',compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,libs:!(),options:'',source:1,stdinPanelShown:'1',wrap:'0'),l:'5',n:'0',o:'Executor+x86-64+gcc+12.2+(C%2B%2B,+Editor+%231)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4"></iframe>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="problem2">
-            <div class="questionContainer">
-                <h2>Problem-2:</h2>
-                <span>
-                    jdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjd.</span>
-                    <button class="showBtn">write Code Here</button>
-            </div>
-            <div id="solutionContainer">
-                <div class="editor ">
-                    <iframe class="compilerExplorer" src="https://godbolt.org/e?hideEditorToolbars=true#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,selection:(endColumn:32,endLineNumber:1,positionColumn:32,positionLineNumber:1,selectionStartColumn:32,selectionStartLineNumber:1,startColumn:32,startLineNumber:1),source:'//Show+Your+Hunting+Skills+Here'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'1',compiler:g122,compilerName:'',compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:14,fontUsePx:'0',j:1,lang:c%2B%2B,libs:!(),options:'',source:1,stdinPanelShown:'1',wrap:'0'),l:'5',n:'0',o:'Executor+x86-64+gcc+12.2+(C%2B%2B,+Editor+%231)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4"></iframe>
 
-                </div>
-            </div>
+        <div class="nxtBtn">
+            <a href="./instructions-round2.html" class="nextBtn disabled-link" target="_self"><button>
+                    N E X T
+                    <div id="clip">
+                        <div id="leftTop" class="corner"></div>
+                        <div id="rightBottom" class="corner"></div>
+                        <div id="rightTop" class="corner"></div>
+                        <div id="leftBottom" class="corner"></div>
+                    </div>
+                    <span id="rightArrow" class="arrow"></span>
+                    <span id="leftArrow" class="arrow"></span>
+                </button></a>
         </div>
     </div>
 
-    <script src="./lib/JScripts/round1.js" async defer></script>
+    <div id="dialog-container" class="dialog-container">
+        <!-- <div class="dialog-header">Custom Alert Dialog</div> -->
+        <div id="dialog-body" class="dialog-body">This is the custom alert message. Click Ok to close this.</div>
+        <div class="dialog-footer">
+            <a id="okBtn">Ok</a>
+        </div>
+    </div>
+
+    <script src="./lib/JScripts/rounds.js" async defer></script>
+    <script type="module" src="./lib/JScripts/timer-round1.js" async defer></script>
+    <script type="module" src="./lib/JScripts/alert.js" async defer></script>
 </body>
 
 </html>
