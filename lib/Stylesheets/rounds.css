@@ -90,6 +90,7 @@ body {
 }
 
 .showBtn {
+	/* height: fit-content; */
 	position: relative;
 	margin: 0 auto;
 	cursor: pointer;
@@ -135,4 +136,24 @@ body {
 
 .disabled-link {
 	pointer-events: none;
+}
+
+.dialog-container-hint {
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #2d2b2b;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px #151515;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.dialog-body-hint {
+    padding: 10px;
+    line-height: 30px;
+    color: #00d34a;
 }

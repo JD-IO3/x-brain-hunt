@@ -17,7 +17,6 @@
 }
 
 body {
-    padding: 20px;
     background: #0C1217;
     color: #00d34a;
 }
@@ -58,7 +57,7 @@ body {
     background-repeat: no-repeat;
     animation:
         b .7s infinite alternate steps(1),
-        t calc(var(--n)*.099s) steps(var(--n))forwards;
+        t calc(var(--n)*.050s) steps(var(--n))forwards;
 }
 
 @keyframes t {
