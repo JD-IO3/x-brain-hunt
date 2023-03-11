@@ -44,7 +44,8 @@
     /* background-color: RGB(248, 248, 248); */
     /* background: transparent; */
     /*ou #F8F8F8*/
-    position: relative;
+    position: sticky;
+    top: 0;
     margin: 110px auto;
     /* display: flex; */
     /* flex-direction: column; */
