@@ -21,7 +21,7 @@ body {
 }
 
 .dialog-container {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: -30%;
     transform: translate(-50%, -50%);
@@ -66,7 +66,7 @@ body {
     font-size: 0;
 }
 
-.dialog-container-hint {
+/* .dialog-container-hint {
     position: absolute;
     left: 50%;
     top: -30%;
@@ -74,7 +74,7 @@ body {
     width: 400px;
     background: #2d2b2b;
     padding: 10px;
-    /* border: 2px solid #ddd; */
+    border: 2px solid #ddd;
     box-shadow: 1px 1px 5px 1px #151515;
     border-radius: 10px;
     opacity: 0;
@@ -85,7 +85,7 @@ body {
     padding: 10px;
     line-height: 30px;
     color: #00d34a;
-}
+} */
 
 /* .dialog-footer a:active {
     box-shadow: inset 2px 2px 4px #00d34a;

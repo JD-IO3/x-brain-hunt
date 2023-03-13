@@ -11,14 +11,19 @@
   <link rel="stylesheet" href="./lib/Stylesheets/alert.css">
 </head>
 
-<body id="bodytimer">
+<body id="bodytimer" oncontextmenu="return false">
   <div class="mainText">
     <span>TIMER</span>
   </div>
+  <div class="time-container">
+    <h1 id="displayTime"></h1>
+  </div>
   <div id="timer">
     <button id="startBtn">
-      <p id="display">15 : 00</p>
+      <p id="display">START</p>
     </button>
+
+    <input type="number" id="time" placeholder="Enter minutes" min="1">
 
     <!-- <label for="time">Durée :</label> -->
     <!-- <input type="number" id="time" placeholder="Enter minutes" min="1"> -->
